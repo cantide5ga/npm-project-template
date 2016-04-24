@@ -1,0 +1,29 @@
+{
+  "author": "cantide5ga",
+  "name": "npm-project-template",
+  "description": "<description>",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "rm -rf build && rm -rf dist",
+    "init": "rm -rf .git && sudo npm install && npm init && git init",
+    "compile": "tsc",
+    "build:tsc": "npm run compile",
+    "prebuild": "mkdir -p dist",
+    "build": "npm run prebuild && npm run build:tsc",
+    "test": "rm -rf build && npm run build:tsc && istanbul cover jasmine",
+    "posttest": "istanbul check-coverage --statements 80 --functions 80 --branches 80 --lines 80"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsd": "^0.6.5",
+    "typescript": "^1.6.2",
+    "istanbul": "^0.4.2",
+    "jasmine": "^2.4.1"
+  },
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cantide5ga/npm-project-template"
+  }
+}
