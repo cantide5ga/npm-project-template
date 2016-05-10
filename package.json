@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "scripts": {
     "clean": "rm -rf build && rm -rf dist",
-    "init": "rm -rf .git && sudo npm install && npm init && git init",
+    "update:dep": "npm install --save-dev typings@* typescript @* istanbul@* jasmine@*",	
+    "init": "rm -rf .git && npm install && npm init && git init && npm update:dep",
     "compile": "tsc",
     "build:tsc": "npm run compile",
     "prebuild": "mkdir -p dist",
@@ -15,7 +16,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "tsd": "^0.6.5",
+    "typings": "^0.8.1",
     "typescript": "^1.6.2",
     "istanbul": "^0.4.2",
     "jasmine": "^2.4.1"
