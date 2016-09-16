@@ -17,7 +17,7 @@
     "publish:major": "npm version major && npm run prepack && npm publish build",
     "publish:minor": "npm version minor && npm run prepack && npm publish build",
     "publish:patch": "npm version patch && npm run prepack && npm publish build",
-    "install:typings": "typings install"
+    "typings": "typings"
   },
   "dependencies": {},
   "devDependencies": {
