@@ -1,5 +1,5 @@
 {
-  "author": "cantide5ga",
+  "author": "aquicore",
   "name": "npm-project-template",
   "description": "<description>",
   "version": "0.1.0",
@@ -30,6 +30,6 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cantide5ga/npm-project-template"
+    "url": "https://github.com/aquicore/npm-project-template"
   }
 }
