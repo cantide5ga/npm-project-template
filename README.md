@@ -1,6 +1,6 @@
 Creating a new npm project
 -----
-1. ```git clone git@github.com:cantide5ga/npm-project-template.git | https://github.com/cantide5ga/npm-project-template.git <new_project_name>```
+1. ```git clone git@github.com:aquicore/npm-project-template.git | https://github.com/aquicore/npm-project-template.git <new_project_name>```
 2. cd into <new_project_name> and ```npm run init```
 3. Create project in your git manager (e.g. Github, Gitlab) or ```git init --bare``` in remote dir 
 4. ```git remote add <shortname> <url>``` corresponding to repo in step 3 above e.g. ```git remote add origin git@github.com:<namespace>/<project_name>.git```, ```git remote add origin ssh://some.url.net/path/to/repo```
